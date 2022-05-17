@@ -1,15 +1,15 @@
 body {
-    text-align: center;
+    background-color: rgb(241, 155, 198);
+    padding: 10px;
+
 }
 
 nav {
-    background-color: steelblue;
     padding:10px;
     text-align: center;
 }
 
 nav, footer{
-    background-color: steelblue;
     color: white;
 }
 
@@ -46,6 +46,11 @@ p {
     width:80%;
 }
 
+p.center {
+
+    text-align: center;
+
+}
 main p {
     width: 80%;
     margin:50px auto;
@@ -59,13 +64,13 @@ main p {
 }
 
 footer p {
+    display:block;
     font-size: 20px;
     margin: 20px auto;
 }
 
 footer {
-    background-color: steelblue;
-    color: white;
+
+    color: black;
     text-align: center;
 }
-
