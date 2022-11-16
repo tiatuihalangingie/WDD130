@@ -199,6 +199,121 @@ footer p a:hover{
 footer .social img{
     padding-top:15px;
 }
+
+
+#msection{
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+}
+
+.river{
+    width:100%;
+    grid-column:2/10;
+    grid-row: 1/4;
+    margin-bottom: 10px;
+}
+.headline{
+    grid-column: 3/9;
+    grid-row: 1/3;
+    background-color: white;
+    color:#485A84;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.Q1,.A1{
+    grid-column: 2/7;
+    grid-row: 5/6;
+
+}
+.river-one{
+    width:80%;
+    grid-column: 7/10;
+    grid-row: 5/6;
+    padding-top: 5%;
+    margin-top: 20px;
+
+}
+.Q2,.A2{
+    grid-column: 5/10;
+    grid-row: 6/7;
+
+}
+.river-two{
+    grid-column: 2/5;
+    grid-row: 6/7;
+    width:90%;
+    margin-top: 20px;
+
+}
+.Q3,.A3{
+    grid-column: 2/7;
+    grid-row: 7/8;
+
+}
+.river-three{
+    grid-column: 7/10;
+    grid-row: 7/8;
+    width:95%;
+    margin-top: 20px;
+
+}
+.Q4,.A4{
+    grid-column: 5/10;
+    grid-row: 8/9;
+
+}
+.river-four{
+    grid-column: 2/5;
+    grid-row: 8/9;
+    width:95%;
+    margin-top: 20px;
+}
+.Q5,.A5{
+    grid-column: 2/7;
+    grid-row: 9/10;
+}
+
+.river-five{
+    grid-column: 7/10;
+    grid-row: 9/10;
+    width:90%;
+    margin-top: 20px;
+
+}
+.Q6,.A6{
+    grid-column: 5/10;
+    grid-row: 10/11;
+
+}
+.river-six{
+    grid-column: 2/5;
+    grid-row: 10/11;
+    width:90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Q1,.Q2,.Q3,.Q4,.Q5,.Q6{
+    padding: 10px;
+    background-color:white;
+    color:#485A84   
+}
+
+.A1,.A2,.A3,.A4,.A5,.A6{
+    padding:20px;
+    margin-top: 70px;
+    background-color: #D8E8DB;   
+}
+
+.river-one,.river-two,.river-three,.river-four,.river-five,.river-six{
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
