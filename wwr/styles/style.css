@@ -339,7 +339,7 @@ form {
   label {
     /* Uniform size & alignment */
     display: inline-block;
-    width: 90px;
+    width: 170px;
     text-align: right;
   }
   

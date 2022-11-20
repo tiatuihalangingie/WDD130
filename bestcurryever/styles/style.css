@@ -1,0 +1,25 @@
+#content{
+    background-color: black;
+    color: white;
+
+}
+
+.order, nav , .link-one {
+    background-color: #FFB41F;
+    color:#68272C
+}
+
+.order:hover, a:hover{
+        background-color:#68272C;
+        color:#FFB41F;
+        
+}
+
+.order{
+    border-radius: 5px;
+    padding:10px;
+}
+
+
+
+
