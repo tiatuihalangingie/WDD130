@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Curry Ever Take-Out</title>
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+    <header>
+        <img class="logo" src="images/logo.png" alt="Best Curry Ever Take-Out">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+        <div class="head-image">
+        
+        <img class="mat" src="images/mat.jpg" alt="mat">
+        <img class="mat2" src="images/mat.jpg" alt="Mat">
+        <img class="image_2" src="images/menu.jpg" alt="menu">
+        <img class="mat3" src="images/mat.jpg" alt="mat">
+        <img class="mat4" src="images/mat.jpg" alt="Mat">
+        
+        <a class="order2" href="order.html">Order Now</a>
+    
+        </div>
+
+        <main class="main-grid">
+
+            <section class="one" >
+            
+            <img class="images1" src="images/meleni.jpg" alt="Otai meleni">
+            
+            <h4>A. Otai Meleni</h4>
+            <p class="para"> A mix of fresh grated watermelon and pineapple</p>
+            
+            </section>
+    
+            <section class="two">
+            <img class="images1" src="images/mango.jpg" alt="Otai mango">
+            <h4>B. Otai Mango</h4>
+            <p class="para">A mix of fresh grated mango and pineapple</p>
+            </section>
+            
+            <section class="three">
+            <img class="images3" src="images/kale_2.jpg" alt="Lamb curry">
+            <h4>C1/C2. Lamb/Chicken</h4>
+            <p class="para">A lamb ribs or chicken thigh seasoning with curry powder and spices including Tumeric, 
+                garlic and ginger.  </p>
+            </section>
+    
+            <section class="four">
+            <img class="images4" src="images/keke_1.jpg" alt="Keke">
+            <h4>D. Keke</h4>
+            <p class="para">Keke tranlation is cake. But they taste like Donut.</p>
+            </section>
+    
+            <section class="five">
+            <img class="images5" src="images/pai.jpg" alt="Pai">
+            <h4>E. Pai</h4>
+            <p class="para">These are rolls pies with jam. There's strawberry , papaya, pineapple
+                jam.
+            </p>
+            </section>
+        
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+              <label for="name">Enter your name: </label>
+              <input type="text" id="name"name="user_name"/>
+        </li>
+                <li>
+              <label for="email">Enter your email: </label>
+              <input type="email" id="email" name="user_email"/>
+            
+        </li>
+        <li>
+            <label for="msg">Type Your Order:[A-E]</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li>
+              <input type="submit" value="Send">
+        </li>
+        </ul>
+        </form>
+
+
+    </main>
+    <footer>
+        <p>BestCurryEverTake-Out &copy; 2022</p>
+        <a href="index.html">Home</a>
+
+        <div class="dropup">
+            <button class="dropbtn">Visit</button>
+            <div class="dropup-content">
+              <a href="order.html">Order Now</a>
+              <a href="menu.html">Menu</a>
+              <a href="about.html">About</a>
+            </div>
+          </div>
+
+        <a class="link-one" href="site-plan.html">Site Plan</a>
+
+        <div class="social">
+            <img src="images/facebook.png" alt="Facebook Icon">
+            <img src="images/instagram.png" alt="Intagram Icon">
+            <img src="images/twitter.png" alt="Twitter Icon">
+        </div>
+        
+    </footer>
+</div>
+
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your order!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+</body>
+</html>
